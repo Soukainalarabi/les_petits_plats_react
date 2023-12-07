@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import close from "../assets/close.png";
 
-export default function ButtonTags({ buttontagAffiche, valueIngredientTags, resetTag }) {
+export default function ButtonTags({ buttontagAffiche, valueIngredientTags, resetTag,type }) {
     const [localValueIngredientTags, setLocalValueIngredientTags] = useState([]);
 
     useEffect(() => {
@@ -20,10 +20,9 @@ export default function ButtonTags({ buttontagAffiche, valueIngredientTags, rese
     return (
         <>
             {buttontagAffiche && (
-                <div className="buttonTag">
                     <div className="groups-tag">
                         {localValueIngredientTags && localValueIngredientTags.map((valueIngredientTag, index) => (
-                            <div className="ingredient-groupe-tag" key={index} style={{ display: "flex" }}>
+                            <div className={`${type}-groupe-tag`} key={index} style={{ display: "flex" }}>
                                 <div style={{ display: "flex", alignItems: "center" }}>
                                     <span onClick={() => handleClickSpan(valueIngredientTag)}>{valueIngredientTag}</span>
                                     <img
@@ -36,7 +35,6 @@ export default function ButtonTags({ buttontagAffiche, valueIngredientTags, rese
                             </div>
                         ))}
                     </div>
-                </div>
             )}
         </>
     );

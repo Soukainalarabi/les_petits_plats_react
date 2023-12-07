@@ -7,12 +7,9 @@ function App() {
   return (
     <React.StrictMode>
       <Router>
-      <div className="container">
-
        <Routes>
-        <Route path='' element={<Home/>}/>
+        <Route path='/' element={<Home/>}/>
        </Routes>
-       </div>
       </Router>
     </React.StrictMode>
   );

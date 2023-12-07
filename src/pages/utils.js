@@ -16,7 +16,9 @@ export const filteredIngredients = (inputIngredient) =>
 export const uniqueIngredient = (filteredIngredients) => [
   ...new Set(filteredIngredients.map((filteredIngredient) => filteredIngredient.ingredientValue)),
 ];
-export const newTab = uniqueIngredient.map((ingredient => <p key={ingredient}>{ingredient}</p>)) 
+// s'assurer que uniqueIngredient est un tableau avant d'utiliser map
+export const newTab = Array.isArray(uniqueIngredient) ? uniqueIngredient.map((ingredient => <p key={ingredient}>{ingredient}</p>)) : [];
+
 
 export const generateIngredientTags = (uniqueIngredient) =>
   uniqueIngredient.map((ingredient) => <p key={ingredient}>{ingredient}</p>);

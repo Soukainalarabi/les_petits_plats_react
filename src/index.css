@@ -58,16 +58,17 @@ code {
 }
 
 .buttonTag {
-    display: block
+    display: flex
 }
 
 .groups-tag {
     display: flex !important;
-    align-items: flex-end;
-    flex-wrap: wrap;
+    /* align-items: flex-end; */
+    flex-wrap: nowrap;
     margin-top: 1%;
     /* display: none; */
     width: auto;
+    flex-direction: row;
 }
 
 .dropdowns {
@@ -102,7 +103,7 @@ code {
 
 /* Style The Dropdown Button */
 .dropbtn-ustensils {
-    margin-left: 5%;
+    /* margin-left: 5%; */
 }
 
 .dropbtn-ustensils,
@@ -133,7 +134,7 @@ code {
 }
 
 .dropdown-content-C {
-    margin-left: 10%;
+    /* margin-left: 10%; */
 }
 
 .dropbtn-appareils,
@@ -145,7 +146,7 @@ code {
 }
 
 .dropdown-content-B {
-    margin-left: 2%;
+    /* margin-left: 2%; */
 }
 
 .dropbtn-ingredients,
@@ -190,11 +191,11 @@ code {
 }
 
 .dropbtn-appareils {
-    margin-left: 6%;
+    /* margin-left: 6%; */
 }
 
 .dropbtn-ustensils {
-    margin-left: 12%;
+    /* margin-left: 12%; */
 }
 
 #message-erreur {
