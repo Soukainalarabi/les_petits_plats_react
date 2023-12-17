@@ -1,7 +1,6 @@
 
 <div align="center">
-  <img src="src/assets/logoPage.png" alt="le logo du site ">
-
+<img src="src/assets/logoPage.png" alt="le logo du site" style="max-width: 50%;    margin-bottom: 50px">
 
   [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
   [![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -23,7 +22,7 @@
 ## Installation du Projet
 Clonez le dépôt:
 
-git clone https://github.com/Soukainalarabi/les_petits_plats_react_react.git
+git clone https://github.com/Soukainalarabi/les_petits_plats_react.git
 
 ### Installation des Dépendances Front-End
 Installez toutes les dépendances pour le front-end:
