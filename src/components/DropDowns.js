@@ -1,4 +1,4 @@
-import React, { useState,useEffect} from "react";
+import React from "react";
 import iconDropDown from "../assets/dropdown.png"
 export default function DropDowns({ title, type, searchType, content, value, onClick, onChange, inputRef, onClickContent,isModif ,handleImageClick}) {  
     return (

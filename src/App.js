@@ -1,16 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import './index.css';
 import Home from './pages/Home';
 
 function App() {
   return (
     <React.StrictMode>
-      <Router>
+      <HashRouter>
        <Routes>
         <Route path='/' element={<Home/>}/>
        </Routes>
-      </Router>
+      </HashRouter>
     </React.StrictMode>
   );
 }

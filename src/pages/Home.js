@@ -21,7 +21,6 @@ max-height: 397px;
 overflow: scroll;
 margin-top: -1%;`
 
-const DropBtnApp = styled.div`margin-left:2%`
 
 export default function Home() {
     const [contentIngredient, setContentIngredient] = useState(false);
@@ -326,6 +325,7 @@ export default function Home() {
                             handleImageClick={handleImageClickUstensil}
                             isModif={isModifUst}
 
+
                         />
                     </div>
                 </>
@@ -333,7 +333,7 @@ export default function Home() {
                 <div className="cards" style={{ display: "grid" }}>
                 {buttontagAfficheIng && !searchValue ? (
     // Condition 1: si buttontagAffiche est true et searchValue n'est pas vide
-    <div style={{ backgroundColor: "red", display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}>
+    <>
         {(filteredIngredientTag || []).map((recipe) => (
             <Card
                 key={recipe.id}
@@ -349,7 +349,7 @@ export default function Home() {
                 description={recipe.description}
             />
         ))}
-    </div>
+    </>
 ) : buttontagAfficheUst && !searchValue ? (
     // Condition 2: si buttontagAfficheUst est true et searchValue n'est pas vide
     <div style={{ backgroundColor: "red", display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}>
@@ -414,7 +414,7 @@ export default function Home() {
     </h3>
 ) : (
     // Condition 5: quand searchValue n'est pas vide et des recettes correspondent au critère de recherche
-    <div style={{ backgroundColor: "pink", display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}>
+    <>
         {filteredRecipesState.map((recipe) => (
             <Card
                 key={recipe.id}
@@ -430,7 +430,7 @@ export default function Home() {
                 description={recipe.description}
             />
         ))}
-    </div>
+    </>
 )}
                 </div>
             </div>
