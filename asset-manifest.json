@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/les_petits_plats_react/static/css/main.c1680a23.css",
+    "main.js": "/les_petits_plats_react/static/js/main.a67e6b10.js",
+    "static/js/787.70678fda.chunk.js": "/les_petits_plats_react/static/js/787.70678fda.chunk.js",
+    "static/media/dropdown.png": "/les_petits_plats_react/static/media/dropdown.9edfd30de83ab8492410.png",
+    "static/media/logo.WebP": "/les_petits_plats_react/static/media/logo.a0f2c4eeb27d517e0e60.WebP",
+    "index.html": "/les_petits_plats_react/index.html",
+    "main.c1680a23.css.map": "/les_petits_plats_react/static/css/main.c1680a23.css.map",
+    "main.a67e6b10.js.map": "/les_petits_plats_react/static/js/main.a67e6b10.js.map",
+    "787.70678fda.chunk.js.map": "/les_petits_plats_react/static/js/787.70678fda.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1680a23.css",
+    "static/js/main.a67e6b10.js"
+  ]
+}
